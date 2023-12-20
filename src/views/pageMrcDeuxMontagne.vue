@@ -16,12 +16,12 @@ import FilArianne3chem from '../components/commun/Navigation/FilArianne3chem.vue
         <main>
             <HeaderMRC>
                 <template v-slot:header>
-                    <img class="header-mrc-paysEnHaut" src="@/assets/img/Regions/header-2Mtng/img_320.jpg" srcset="
-                  @/assets/img/Regions/header-2Mtng/img_320.jpg 320w,
-                  @/assets/img/Regions/header-2Mtng/img_768.jpg 768w,
-                  @/assets/img/Regions/header-2Mtng/img_992.jpg 992w,
-                  @/assets/img/Regions/header-2Mtng/img_1200.jpg 1200w,
-                  @/assets/img/Regions/header-2Mtng/img_1920.jpg 1920w
+                    <img class="header-mrc-paysEnHaut" src="@/assets/img/regions/header-2Mtng/img_320.jpg" srcset="
+                  @/assets/img/regions/header-2Mtng/img_320.jpg 320w,
+                  @/assets/img/regions/header-2Mtng/img_768.jpg 768w,
+                  @/assets/img/regions/header-2Mtng/img_992.jpg 992w,
+                  @/assets/img/regions/header-2Mtng/img_1200.jpg 1200w,
+                  @/assets/img/regions/header-2Mtng/img_1920.jpg 1920w
               " />
                 </template>
                 <template v-slot:titre>

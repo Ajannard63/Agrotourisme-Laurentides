@@ -16,7 +16,7 @@ import { RouterLink } from "vue-router";
                 <div class="leBouton">
                     <div class="first-content">
                         <span>
-                            <img src="@/assets/img/Regions/header-argenteuil/img_320.jpg" alt="">
+                            <img src="@/assets/img/regions/header-argenteuil/img_320.jpg" alt="">
                         </span>
                     </div>
                     <div class="second-content">
@@ -30,7 +30,7 @@ import { RouterLink } from "vue-router";
                 <div class="leBouton">
                     <div class="first-content">
                         <span>
-                            <img src="@/assets/img/Regions/header-paysEnHaut/img_320.jpg" alt="">
+                            <img src="@/assets/img/regions/header-paysEnHaut/img_320.jpg" alt="">
                         </span>
                     </div>
                     <div class="second-content">
@@ -44,7 +44,7 @@ import { RouterLink } from "vue-router";
                 <div class="leBouton">
                     <div class="first-content">
                         <span>
-                            <img src="@/assets/img/Regions/header-laurentides/img_320.jpg" alt="">
+                            <img src="@/assets/img/regions/header-laurentides/img_320.jpg" alt="">
                         </span>
                     </div>
                     <div class="second-content">
@@ -59,7 +59,7 @@ import { RouterLink } from "vue-router";
                     <div class="first-content">
                         <span>
 
-                            <img src="@/assets/img/Regions/header-riv/img_320.jpg" alt="">
+                            <img src="@/assets/img/regions/header-riv/img_320.jpg" alt="">
                         </span>
                     </div>
                     <div class="second-content">
@@ -75,7 +75,7 @@ import { RouterLink } from "vue-router";
                     <div class="first-content">
                         <span>
 
-                            <img src="@/assets/img/Regions/header-mirabel/img_320.jpg" alt="">
+                            <img src="@/assets/img/regions/header-mirabel/img_320.jpg" alt="">
                         </span>
                     </div>
                     <div class="second-content">
@@ -89,7 +89,7 @@ import { RouterLink } from "vue-router";
                 <div class="leBouton">
                     <div class="first-content">
                         <span>
-                            <img src="@/assets/img/Regions/header-2Mtng/img_320.jpg" alt="">
+                            <img src="@/assets/img/regions/header-2Mtng/img_320.jpg" alt="">
                         </span>
                     </div>
                     <div class="second-content">
