@@ -1,0 +1,180 @@
+// Style pub forfait découverte (cat hébergement)
+//------------------------------------------------
+// Nom: Oli Boucher
+// Matricule: 2147514
+
+section.decouverte {
+    @include setFlex(column, center, center);
+    height: 800px;
+    width: 100%;
+    background-image: url(@/assets/img/categorie/decouverte/img_320.jpg);
+    background-size: cover;
+
+    @include breakpoint-min(992) {
+        @include setFlex(row-reverse, center, center);
+        margin-bottom: 100px;
+        background-image: none;
+    }
+
+    @include breakpoint-min(1920) {
+        margin: 300px 0;
+    }
+
+    //-----------------------------------------------
+    // Image format desktop
+    //------------------------------------------------
+    & div:nth-child(1) {
+        & img {
+            display: none;
+
+            @include breakpoint-min(992) {
+                display: block;
+                height: 600px;
+                width: 800px;
+                object-fit: cover;
+            }
+
+            @include breakpoint-min(1200) {
+                width: 1000px;
+            }
+
+            @include breakpoint-min(1492) {
+                width: 1400px;
+            }
+
+            @include breakpoint-min(1920) {
+                width: 2000px;
+                height: 800px;
+            }
+        }
+    }
+
+    //-----------------------------------------------
+    // Contenu 
+    //------------------------------------------------
+    & div:nth-child(2) {
+        @include setFlex(column, space-around, center);
+        @include bouton;
+        height: 600px;
+        width: 90%;
+        backdrop-filter: blur(10px) brightness(50%);
+        color: white;
+
+        @include breakpoint-min(768) {
+            width: 70%;
+        }
+
+        @include breakpoint-min(992) {
+            width: 100%;
+            backdrop-filter: none;
+            color: black;
+        }
+
+        @include breakpoint-min(1920) {
+            height: 800px;
+        }
+
+        & div {
+            width: 100%;
+
+            & h2 {
+                @include setFlex(column, flex-start, flex-start);
+                margin: 50px 50px;
+
+                @include breakpoint-min(768) {
+                    margin: 50px 50px;
+                    font-size: 2.5em
+                }
+
+                @include breakpoint-min(1200) {
+                    font-size: 3.5em
+                }
+
+                @include breakpoint-min(1920) {
+                    font-size: 4.5em
+                }
+            }
+        }
+
+        & div.infos {
+            @include setFlex(column, space-around, flex-start);
+            padding: 0 50px;
+            margin: 0 0 20px 0;
+            font-weight: 200;
+
+            @include breakpoint-min(576) {
+                margin: 0 0 50px 0;
+            }
+
+            @include breakpoint-min(576) {
+                margin: 0;
+            }
+
+            & p {
+                font-size: 0.9em;
+
+                @include breakpoint-min(1200) {
+                    font-size: 1.1em;
+                    line-height: 1.5em;
+                }
+
+                @include breakpoint-min(1920) {
+                    font-size: 1.3em;
+                }
+            }
+
+            & p.prix {
+                margin: 20px 0;
+                font-size: 2em;
+                font-weight: 500;
+
+                @include breakpoint-min(768) {
+                    font-size: 2.5em;
+                }
+
+                @include breakpoint-min(1200) {
+                    font-size: 3em;
+                }
+
+                @include breakpoint-min(1920) {
+                    font-size: 4em;
+                }
+
+                & span {
+                    font-size: 0.5em;
+                }
+            }
+
+            //-----------------------------------------------
+            // Bouton En savoir plus
+            //------------------------------------------------
+            & a {
+                margin: 0;
+                width: 100%;
+                color: white;
+                border: 1px solid white;
+                background: transparent;
+
+                @include breakpoint-min(992) {
+                    color: var(--vert400);
+                    border: 1px solid var(--vert400);
+                }
+
+                @include breakpoint-min(1920) {
+                    padding: 20px 40px;
+                    font-size: 1.1em;
+                }
+
+                &:hover {
+                    background-color: var(--vert400);
+                    border: 1px solid var(--vert400);
+
+                    @include breakpoint-min(992) {
+                        color: white;
+                    }
+                }
+            }
+
+        }
+    }
+}

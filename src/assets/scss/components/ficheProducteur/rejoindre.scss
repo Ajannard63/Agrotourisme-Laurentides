@@ -1,0 +1,106 @@
+// Style section de contact producteur
+//------------------------------------------------
+// Nom: Oli Boucher
+// Matricule: 2147514
+
+section.rejoindre {
+    position: relative;
+    background-color: white;
+    margin: 0 50px 100px 50px;
+    padding: 50px 20px;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.468);
+
+    @include breakpoint-min(768) {
+        padding: 50px 100px;
+    }
+
+    @include breakpoint-min(1200) {
+        width: 90%;
+    }
+
+    @include breakpoint-min(1920) {
+        width: 95%;
+        padding: 100px 100px;
+
+    }
+
+    //-----------------------------------------------
+    // Icones
+    //------------------------------------------------
+    & .infos {
+        @include breakpoint-min(768) {
+            @include setFlex (row, flex-start, flex-start);
+        }
+    }
+
+    & img {
+        display: none;
+
+        @include breakpoint-min(768) {
+            display: block;
+            margin-right: 50px;
+            width: 10%;
+            border-radius: 50%;
+        }
+
+        @include breakpoint-min(992) {
+            width: 8%;
+        }
+
+        @include breakpoint-min(1920) {
+            width: 4%;
+        }
+    }
+
+    & h3 {
+        margin: 0 0 20px 0;
+        font-size: 1.5em;
+        font-weight: 700;
+
+        @include breakpoint-min(576) {
+            margin-bottom: 50px;
+            font-size: 2em;
+        }
+
+        @include breakpoint-min(992) {
+            margin-bottom: 100px;
+            font-size: 2.5em;
+        }
+
+
+        @include breakpoint-min(1920) {
+            margin-bottom: 100px;
+            font-size: 4em;
+            line-height: 1.1em;
+        }
+    }
+
+    & h4 {
+        font-weight: 500;
+        font-size: 1em;
+
+        @include breakpoint-min(992) {
+            font-size: 1.2em;
+        }
+
+
+        @include breakpoint-min(1920) {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+    }
+
+    & p {
+        margin-bottom: 20px;
+
+
+        @include breakpoint-min(992) {
+            margin-bottom: 50px;
+        }
+
+
+        @include breakpoint-min(1920) {
+            font-size: 1.2em;
+        }
+    }
+}

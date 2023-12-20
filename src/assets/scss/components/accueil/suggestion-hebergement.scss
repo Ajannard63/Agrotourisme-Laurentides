@@ -1,0 +1,264 @@
+// Style de la couche de suggestions d'hébergement
+//------------------------------------------------
+// Nom: Oli Boucher
+// Matricule: 2147514
+
+
+section.hebergement-accueil {
+    position: relative;
+    background-image: url("@/assets/img/accueil/back_hebergement/img_1920.jpg");
+    background-size: 100%;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 150px;
+
+    @include breakpoint-min(1200) {
+        padding-top: 1px;
+        padding-bottom: 250px;
+    }
+
+    @include breakpoint-min(1920) {
+        padding-bottom: 500px;
+    }
+
+    & h2 {
+        box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.468);
+        backdrop-filter: blur(5px);
+    }
+
+    & .liste-hebergement {
+        @include setFlex(column, center, center);
+
+        @include breakpoint-min(1920) {
+            @include setFlex(row, center, center);
+        }
+
+    }
+
+    //-----------------------------------------------
+    // Un hébergement
+    //------------------------------------------------
+    & .hebergement {
+        @include setFlex(column, center, center);
+        margin: 0px 50px;
+        color: black;
+
+        @include breakpoint-min(576) {
+            margin: 0px 100px;
+        }
+
+        @include breakpoint-min(768) {
+            margin: 0px 100px;
+        }
+
+        @include breakpoint-min(992) {
+            @include setFlex(row, center, center);
+        }
+
+        @include breakpoint-min(1920) {
+            @include setFlex(column, center, center);
+            margin: 0 50px;
+        }
+
+
+
+        & img {
+            @include breakpoint-min(768) {
+                height: 300px;
+                width: 100%;
+                margin: 0 200px;
+                object-fit: cover;
+            }
+
+            @include breakpoint-min(992) {
+                height: 300px;
+                width: 100%;
+                margin: 0;
+                object-fit: cover;
+            }
+
+            @include breakpoint-min(1200) {
+                height: 400px;
+                width: 80%;
+            }
+
+            @include breakpoint-min(1492) {
+                height: 400px;
+                width: 700px;
+            }
+
+            @include breakpoint-min(1920) {
+                height: 400px;
+                width: 500px;
+            }
+        }
+
+        & .infos {
+            @include setFlex(column, center, center);
+            background-color: white;
+            width: 100%;
+            height: 150px;
+
+            @include breakpoint-min(992) {
+                height: 300px;
+                width: 500px;
+            }
+
+            @include breakpoint-min(1200) {
+                height: 400px;
+                width: 500px;
+            }
+
+            @include breakpoint-min(1492) {
+                font-size: 1.5em;
+            }
+        }
+    }
+
+    & .hebergement:nth-child(2),
+    & .hebergement:nth-child(3) {
+        margin-top: 100px;
+
+        @include breakpoint-min(1920) {
+            margin: 0 50px;
+        }
+
+    }
+}
+
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Bouton visiter
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+section.hebergement-accueil {
+    & .hebergement {
+        position: relative;
+
+        & a {
+            display: none;
+        }
+
+
+        &:hover {
+
+            & a {
+                @include setFlex(column, center, center);
+                position: absolute;
+                bottom: 0;
+                height: 100%;
+                width: 100%;
+                background: var(--brown100);
+                color: white;
+                border: none;
+                font-size: 1.5em;
+                font-weight: bold;
+                cursor: pointer;
+                z-index: 1;
+                overflow: hidden;
+
+                @include breakpoint-min(992) {
+                    right: 0;
+                }
+
+            }
+
+            & a:hover {
+                color: var(--brown100);
+
+            }
+
+            & a:after {
+                content: "";
+                background: white;
+                position: absolute;
+                z-index: -1;
+                left: -20%;
+                right: -20%;
+                top: 0;
+                bottom: 0;
+                transform: skewX(-45deg) scale(0, 1);
+                transition: all 1.5s;
+
+            }
+
+            & a:hover:after {
+                transform: skewX(-45deg) scale(2, 2);
+                -webkit-transition: all 1.5s;
+                transition: all 1.5s;
+            }
+
+        }
+    }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Bouton voir plus
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+section.hebergement-accueil {
+    position: relative;
+
+    & .voir-plus {
+        @include setFlex(column, center, center);
+        position: relative;
+
+        & a {
+            width: 80%;
+            margin-top: 50px;
+            padding: 17px 40px;
+            border-radius: 50px;
+            border: 0;
+            color: var(--brown100);
+            text-align: center;
+            background-color: white;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            font-size: 15px;
+            transition: all .5s ease;
+
+            @include breakpoint-min(768) {
+                margin-top: 100px;
+            }
+
+            @include breakpoint-min(992) {
+                margin-top: 150px;
+            }
+
+            @include breakpoint-min(1200) {
+                position: absolute;
+                right: 0;
+                margin-top: 400px;
+                margin-right: 150px;
+            }
+
+            @include breakpoint-min(1492) {
+                margin-top: 300px;
+                margin-right: 150px;
+            }
+
+            @include breakpoint-min(1920) {
+                padding: 25px;
+                width: 90%;
+                margin-top: 500px;
+                margin-right: 100px;
+                font-size: 1.2em;
+            }
+
+            &:hover {
+                letter-spacing: 3px;
+                background-color: var(--brown100);
+                color: hsl(0, 0%, 100%);
+                box-shadow: var(--brown800) 0px 10px 9px 0px;
+            }
+
+            &:active {
+                letter-spacing: 3px;
+                background-color: var(--brown100);
+                color: hsl(0, 0%, 100%);
+                box-shadow: var(--brown800) 0px 0px 0px 0px;
+                transform: translateY(10px);
+                transition: 100ms;
+            }
+        }
+
+    }
+}

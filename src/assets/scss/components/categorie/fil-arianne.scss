@@ -1,0 +1,27 @@
+// Style fil d'Ariane
+//------------------------------------------------
+// Nom: Oli Boucher
+// Matricule: 2147514
+
+.arianne {
+    @include setFlex(row, flex-start, center);
+    font-size: 0.8em;
+    margin: 50px;
+
+    & p {
+        padding: 0 10px;
+    }
+
+    //-----------------------------------------------
+    // Couleur de la section active
+    //------------------------------------------------
+    & a:last-child {
+        color: var(--vert400);
+    }
+
+    & a:nth-child(1) {
+        &:hover {
+            border-bottom: 1px solid var(--vert400);
+        }
+    }
+}

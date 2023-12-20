@@ -1,0 +1,79 @@
+// Style des textes d'introduction
+//------------------------------------------------
+// Nom: Oli Boucher
+// Matricule: 2147514
+
+
+
+section.intro {
+
+    //-----------------------------------------------
+    // Image
+    //------------------------------------------------
+    & img {
+        height: 150px;
+        width: 100%;
+        object-fit: cover;
+
+        @include breakpoint-min(1200) {
+            height: 700px;
+            width: 500px;
+        }
+
+        @include breakpoint-min(1920) {
+            height: 800px;
+            width: 900px;
+        }
+    }
+
+    //-----------------------------------------------
+    // Texte
+    //------------------------------------------------
+    & p {
+        padding: 100px 50px;
+        font-weight: 200;
+        line-height: 1.5em;
+
+        @include breakpoint-min(576) {
+            padding: 100px;
+        }
+
+        @include breakpoint-min(768) {
+            padding: 150px 100px;
+        }
+
+        @include breakpoint-min(992) {
+            font-size: 1em;
+        }
+
+        @include breakpoint-min(1920) {
+            padding: 150px;
+            font-size: 1.5em;
+        }
+
+    }
+
+    .paragraphe:nth-child(2),
+    .paragraphe:nth-child(4) {
+        color: white;
+        background-color: var(--vert400);
+
+    }
+
+    .paragraphe {
+        @include breakpoint-min(1200) {
+            @include setFlex(row, center, center);
+            height: 700px;
+        }
+
+        @include breakpoint-min(1920) {
+            height: 800px;
+        }
+    }
+
+    .paragraphe:nth-child(3) {
+        @include breakpoint-min(1200) {
+            @include setFlex(row-reverse, center, center);
+        }
+    }
+}

@@ -1,0 +1,116 @@
+// Style proposition d'activités (cat activités)
+//------------------------------------------------
+// Nom: Oli Boucher
+// Matricule: 2147514
+
+section.proposition-activite {
+    @include setFlex(column, center, flex-start);
+    @include bouton;
+    padding: 50px;
+    width: 100%;
+    margin: 50px 0;
+
+    @include breakpoint-min(576) {
+        padding: 0 100px;
+    }
+
+    @include breakpoint-min(992) {
+        margin: 100px 0;
+    }
+
+    @include breakpoint-min(992) {
+        margin: 200px 0;
+    }
+
+    //-----------------------------------------------
+    // Bouton
+    //------------------------------------------------
+    & a {
+        margin: 50px 0;
+
+        @include breakpoint-min(992) {
+            width: 300px;
+        }
+
+        @include breakpoint-min(1920) {
+            margin: 100px 0;
+            width: 500px;
+            font-size: 1.1em;
+        }
+    }
+
+    & h2 {
+        margin: 0;
+    }
+
+
+    & div.conteneur {
+        @include setFlex(column, center, center);
+        width: 100%;
+
+        @include breakpoint-min(1200) {
+            @include setFlex (row, space-between, center);
+        }
+
+        & div {
+            @include setFlex(column, flex-end, center);
+            position: relative;
+            margin-bottom: 100px;
+
+            & a {
+                position: absolute;
+                bottom: -80px;
+                padding: 20px;
+                border-radius: 10px;
+                color: white;
+                background-color: var(--vert400);
+
+                @include breakpoint-min(1200) {
+                    padding: 20px 0;
+                    width: 200px;
+                }
+
+                @include breakpoint-min(1920) {
+                    bottom: -130px;
+                    border-radius: 20px;
+                    padding: 30px 0;
+                    width: 400px;
+                }
+            }
+
+            & img {
+                width: 300px;
+                height: 300px;
+                object-fit: cover;
+                border-radius: 20px;
+
+                @include breakpoint-min(576) {
+                    width: 400px;
+                }
+
+                @include breakpoint-min(768) {
+                    width: 600px;
+                }
+
+                @include breakpoint-min(992) {
+                    width: 800px;
+                }
+
+                @include breakpoint-min(1200) {
+                    height: 500px;
+                    width: 280px;
+                }
+
+                @include breakpoint-min(1492) {
+                    width: 350px;
+                }
+
+                @include breakpoint-min(1920) {
+                    height: 600px;
+                    width: 500px;
+                }
+            }
+        }
+    }
+
+}

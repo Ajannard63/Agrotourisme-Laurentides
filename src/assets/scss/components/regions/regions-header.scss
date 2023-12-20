@@ -1,0 +1,213 @@
+.headerRegions {
+    @include setFlex(column, center, center);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('@/assets/img/regions/header-region.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include breakpoint-min(1200) {
+        @include setFlex(row, center, center);
+    }
+
+    & h1 {
+        @include resetBox;
+        font-size: 2em;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: white;
+        animation: slideTitle 1s ease-in-out forwards;
+
+        @include breakpoint-min(576) {
+            font-size: 3em;
+        }
+
+        @include breakpoint-min(768) {
+            font-size: 4em;
+        }
+
+        @include breakpoint-min(992) {
+            font-size: 5em;
+        }
+
+        @include breakpoint-min(1200) {
+            position: absolute;
+            top: 20%;
+            left: 100px;
+        }
+
+        @include breakpoint-min(1920) {
+            font-size: 7em;
+        }
+    }
+
+    @keyframes slideTitle {
+        0% {
+            opacity: 0;
+            transform: translateX(1500px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    & .btn-mrc {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 50px;
+
+
+        @include breakpoint-min(1200) {
+            position: absolute;
+            right: 80px;
+            bottom: 50px;
+        }
+
+        @include breakpoint-min(1492) {
+            right: 150px;
+            bottom: 10%;
+        }
+
+        & img {
+            display: none;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 300px;
+
+            @include breakpoint-min(1200) {
+                display: block;
+                margin: 10px
+            }
+
+            @include breakpoint-min(1920) {
+                width: 200px;
+                height: 200px;
+            }
+        }
+
+        & .leBouton {
+            display: none;
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            border-radius: 300px;
+            background: var(--vert100);
+            box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
+            transition: all 0.4s;
+
+            @include breakpoint-min(1200) {
+                display: block;
+            }
+
+            @include breakpoint-min(1920) {
+                width: 200px;
+                height: 200px;
+                margin: 20px;
+            }
+
+            &:hover {
+                cursor: pointer;
+                box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.705);
+                background: var(--jaune);
+            }
+
+            & .first-content {
+                height: 100%;
+                width: 100%;
+                transition: all 0.4s;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                opacity: 1;
+                border-radius: 15px;
+            }
+
+            &:hover .first-content {
+                height: 0px;
+                opacity: 0;
+            }
+
+            & .second-content {
+                height: 0%;
+                width: 100%;
+                opacity: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 15px;
+                transition: all 0.4s;
+                font-size: 0px;
+                transform: rotate(90deg) scale(-1);
+            }
+
+
+            &:hover .second-content {
+                opacity: 1;
+                height: 100%;
+                font-size: 1.2rem;
+                font-weight: 500;
+                transform: rotate(0deg);
+
+
+                @include breakpoint-min(1920) {
+                    font-size: 1.5em;
+                    bottom: 10%;
+                }
+            }
+        }
+
+    }
+
+    & div.description {
+        @include setFlex(column-reverse, space-around, space-around);
+        height: 100%;
+        color: white;
+
+        @include breakpoint-min(992) {
+            @include setFlex(column, space-around, space-around);
+        }
+
+        @include breakpoint-min(1200) {
+            width: 50%;
+        }
+
+        & p {
+            padding: 50px;
+            font-size: 1em;
+            font-weight: 200;
+            backdrop-filter: blur(10px);
+
+            @include breakpoint-min(576) {
+                margin: 0 20px;
+                border-radius: 50px;
+            }
+
+            @include breakpoint-min(768) {
+                margin: 0 80px;
+            }
+
+
+            @include breakpoint-min(1200) {
+                position: absolute;
+                bottom: 100px;
+                left: -30px;
+                width: 40%;
+            }
+
+            @include breakpoint-min(1492) {
+                @include setFlex(column, center, center);
+                height: 50%;
+                left: 0;
+            }
+
+            @include breakpoint-min(1920) {
+                font-size: 1.3em;
+                line-height: 2em;
+            }
+        }
+    }
+}

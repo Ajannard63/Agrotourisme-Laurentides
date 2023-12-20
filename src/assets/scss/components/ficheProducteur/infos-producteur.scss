@@ -1,0 +1,128 @@
+// Style section des infos du producteur
+//------------------------------------------------
+// Nom: Oli Boucher
+// Matricule: 2147514
+
+section.a-propos {
+    @include setFlex (column, center, center);
+    position: relative;
+    margin: 0 50px 100px 50px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.468);
+
+    @include breakpoint-min(576) {
+        margin: 200px 50px;
+    }
+
+    @include breakpoint-min(992) {
+        right: 0;
+        width: 80%;
+    }
+
+    & .infos {
+
+        @include breakpoint-min(768) {
+            padding: 0 60px;
+        }
+
+        @include breakpoint-min(992) {
+            padding: 15% 0 0 300px;
+            text-align: left;
+        }
+
+        @include breakpoint-min(1200) {
+            padding: 20% 0 0 300px;
+            text-align: left;
+        }
+
+        @include breakpoint-min(1492) {
+            padding: 20% 0 0 400px;
+        }
+
+        @include breakpoint-min(1920) {
+            padding: 20% 0 0 600px;
+        }
+    }
+
+    & p {
+        padding: 0 30px;
+        line-height: 1.5em;
+        font-weight: 200;
+
+        @include breakpoint-min(576) {
+            padding: 50px 50px;
+        }
+
+        @include breakpoint-min(1492) {
+            padding: 50px 100px 0 50px;
+            font-size: 1.2em;
+        }
+
+        @include breakpoint-min(1492) {
+            padding: 100px 200px 0 50px;
+            font-size: 1.5em;
+        }
+    }
+
+    & h2 {
+        position: absolute;
+        top: -120px;
+
+        @include breakpoint-min(576) {
+            top: -200px;
+        }
+
+        @include breakpoint-min(992) {
+            top: -50px;
+            left: -50px;
+        }
+
+        @include breakpoint-min(1920) {
+            top: -100px;
+            left: 0px;
+        }
+
+        & span {
+            @include breakpoint-min(992) {
+                position: absolute;
+            }
+        }
+    }
+
+    //-----------------------------------------------
+    // Commodités
+    //------------------------------------------------
+    & div.symbole {
+        position: relative;
+        display: grid;
+        margin: 50px 20px;
+        grid-template-columns: repeat(4, 1fr);
+
+        @include breakpoint-min(576) {
+            margin: 50px 100px;
+        }
+
+        @include breakpoint-min(992) {
+            width: 50%;
+            margin: 50px 50px 100px 50px;
+        }
+
+        @include breakpoint-min(1492) {
+            width: 60%;
+            margin: 100px 50px 100px 50px;
+        }
+
+        & img {
+            width: 50px;
+            height: auto;
+            margin: 0 5px;
+            // border-radius: 50%;
+
+            @include breakpoint-min(1492) {
+                width: 80px;
+                margin: 0 20px 0 0;
+            }
+        }
+    }
+}

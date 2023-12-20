@@ -1,0 +1,71 @@
+// Style des couleurs de la liste des mois
+//------------------------------------------------
+// Nom: Oli Boucher
+// Matricule: 2147514
+
+section.liste {
+    & .liste-mois {
+        & ul {
+            & li:nth-child(1) {
+                & a{
+                    background-color: var(--vert100);
+                }
+            }
+            & li:nth-child(2) {
+                & a{
+                    background-color: var(--vert200);
+                }
+            }
+            & li:nth-child(3) {
+                & a{
+                    background-color: var(--vert300);
+                }
+            }
+            & li:nth-child(4) {
+                & a{
+                    background-color: var(--vert400);
+                }
+            }
+            & li:nth-child(5) {
+                & a{
+                    background-color: var(--vert500);
+                }
+            }
+            & li:nth-child(6) {
+                & a{
+                    background-color: var(--vert600);
+                }
+            }
+            & li:nth-child(7) {
+                & a{
+                    background-color: var(--vert700);
+                }
+            }
+            & li:nth-child(8) {
+                & a{
+                    background-color: var(--vert800);
+                }
+            }
+            & li:nth-child(9) {
+                & a{
+                    background-color: var(--vert900);
+                }
+            }
+            & li:nth-child(10) {
+                & a{
+                    background-color: var(--vert1000);
+                }
+            }
+            & li:nth-child(11) {
+                & a{
+                    background-color: var(--vert1100);
+                }
+            }
+            & li:nth-child(12) {
+                & a{
+                    background-color: var(--vert1200);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,15 @@
+// Style section du logo
+//------------------------------------------------
+// Nom: Oli Boucher
+// Matricule: 2147514
+
+.logo {
+    @include setFlex (row, center, center);
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 50px auto;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: white;
+    overflow: hidden;
+}

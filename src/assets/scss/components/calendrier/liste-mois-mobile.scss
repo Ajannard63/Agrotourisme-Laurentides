@@ -1,0 +1,217 @@
+// Style de la liste des mois pour mobile
+//------------------------------------------------
+// Nom: Oli Boucher
+// Matricule: 2147514
+
+
+main.calendrier {
+    max-width: 100vw;
+
+    & h2 {
+        margin: 50px 50px;
+        font-size: 1.5em;
+        font-weight: 1000;
+        line-height: 1.2em;
+        text-transform: uppercase;
+
+        @include breakpoint-min(576) {
+            margin: 100px;
+            font-size: 2em;
+        }
+
+        @include breakpoint-min(992) {
+            margin: 200px 100px 100px 100px;
+            font-size: 2.5em;
+        }
+
+        @include breakpoint-min(1200) {
+            margin: 150px 150px;
+        }
+
+        @include breakpoint-min(1920) {
+            margin: 200px 150px;
+            font-size: 4em;
+        }
+    }
+
+    & .mois-mobile {
+        @include breakpoint-min(1200) {
+            display: none;
+        }
+    }
+
+    //-----------------------------------------------
+    // Liste des mois 
+    //------------------------------------------------
+
+    .liste-mois ul {
+        @include setFlex (column, center, flex-start);
+
+        & li {
+            @include setFlex(column, center, center);
+            width: 100%;
+
+            @include breakpoint-min(1200) {
+                width: 100px;
+            }
+
+            //-----------------------------------------------
+            // Une activité
+            //------------------------------------------------
+            & .activite {
+                @include setFlex(column, center, center);
+                position: relative;
+                margin: 100px 0 200px 0;
+                height: 500px;
+                background-color: var(--vert1000);
+
+                @include breakpoint-min(992) {
+                    height: 700px;
+                }
+
+                & img.image-activite {
+                    position: absolute;
+                    height: 100px;
+                    width: 90%;
+                    object-fit: cover;
+                    border-radius: 50px 0;
+
+                    @include breakpoint-min(576) {
+                        width: 75%;
+                    }
+
+                    @include breakpoint-min(1200) {
+                        display: none;
+                    }
+
+                    &:nth-child(1) {
+                        top: -50px;
+
+                        @include breakpoint-min(1200) {
+                            display: none;
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        bottom: -50px;
+
+                        @include breakpoint-min(1200) {
+                            display: none;
+                        }
+                    }
+                }
+
+                & div.image-desktop {
+                    display: none;
+                }
+
+                & .infos {
+                    @include setFlex(column, space-around, flex-start);
+                    padding: 0 50px;
+                    height: 60%;
+                    color: white;
+
+                    @include breakpoint-min(576) {
+                        padding: 0 100px;
+                    }
+
+                    & div.bloc {
+                        @include setFlex(column, space-around, flex-start);
+                        height: 70%;
+
+                        & p:nth-child(1),
+                        & p:nth-child(2) {
+                            font-size: 1em;
+                            font-weight: 500;
+                            text-transform: uppercase;
+
+                            @include breakpoint-min(576) {
+                                font-size: 1.2em;
+                            }
+
+                            @include breakpoint-min(992) {
+                                font-size: 1.5em;
+                            }
+                        }
+
+                        & p:nth-child(3),
+                        & p:nth-child(4) {
+                            font-size: 0.8em;
+                            font-weight: 300;
+
+                            @include breakpoint-min(576) {
+                                font-size: 0.9em;
+                            }
+
+                            @include breakpoint-min(992) {
+                                font-size: 1.2em;
+                                line-height: 2em
+                            }
+                        }
+                    }
+
+                    & h3 {
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        font-size: 1.5em;
+                        line-height: 1.2em;
+
+                        @include breakpoint-min(576) {
+                            font-size: 1.7em;
+                        }
+
+                        @include breakpoint-min(992) {
+                            font-size: 2em;
+                        }
+                    }
+                }
+            }
+
+            //-----------------------------------------------
+            // Bouton du mois
+            //------------------------------------------------
+            & a {
+                @include setFlex(column, center, flex-start);
+                height: 60px;
+                width: 100%;
+                margin-bottom: 10px;
+                padding-left: 50px;
+                color: white;
+                font-weight: 700;
+                text-transform: uppercase;
+
+                @include breakpoint-min(576) {
+                    padding: 0 100px;
+                    font-size: 1.5em;
+                }
+
+                @include breakpoint-min(992) {
+                    height: 90px;
+                    font-size: 2em
+                }
+
+                //-----------------------------------------------
+                // Classe lorsque le bouton est actif
+                //------------------------------------------------
+                &.active-mois {
+                    letter-spacing: 5px;
+                    background-color: var(--jaune) !important;
+                    color: hsl(0, 0%, 100%);
+                    font-size: 2.5em;
+                    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+                    box-shadow: var(--vert1300) 0px 1px 9px 0px;
+                    transform: translateY(10px);
+                    transition: 100ms;
+
+                    @include breakpoint-min(576) {
+                        font-size: 3em;
+                    }
+
+                    @include breakpoint-min(992) {
+                        font-size: 4em;
+                    }
+                }
+            }
+        }
+    }
+}

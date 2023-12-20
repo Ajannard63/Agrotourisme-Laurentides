@@ -1,0 +1,99 @@
+// Style de la couche infolettre
+//------------------------------------------------
+// Nom: Oli Boucher
+// Matricule: 2147514
+
+section.couche-infolettre{
+    @include setFlex(column, space-evenly, center);
+    margin: 100px auto 0 auto;
+    padding: 100px 50px;
+    height: 300px;
+    color: white;
+    background-color: var(--vert500);
+
+    @include breakpoint-min(1200) {
+        padding: 200px 0px;
+        margin-top: 200px;
+    }
+
+    @include breakpoint-min(1920) {
+        padding: 300px 0px;
+        margin-top: 200px;
+    }
+
+    & h2 {
+        margin: 20px 0px;
+
+        @include breakpoint-min(1492){
+            margin-bottom: 50px;
+            font-size: 3em;
+        }
+    }
+
+    & p {
+        margin-bottom: 50px;
+
+        @include breakpoint-min(1492){
+            margin-bottom: 100px;
+            font-size: 2em;
+        }
+    }
+}
+
+//-----------------------------------------------
+// Bouton input
+//------------------------------------------------
+section.couche-infolettre{
+    .input-group {
+        display: flex;
+        align-items: center;
+      }
+      
+      .input {
+        min-height: 50px;
+        max-width: 150px;
+        padding: 0 1rem;
+        color: white;
+        font-size: 15px;
+        border: 1px solid white;
+        border-radius: 6px 0 0 6px;
+        background-color: transparent;
+
+        @include breakpoint-min(1200) {
+            min-width: 300px;
+        }
+
+        @include breakpoint-min(1920) {
+            min-width: 500px;
+            padding: 2rem;
+            font-size: 1.5em;
+        }
+      }
+      
+      .button--submit {
+        min-height: 50px;
+        padding: .5em 1em;
+        border: none;
+        border-radius: 0 6px 6px 0;
+        background-color: white;
+        color: var(--vert500);
+        font-size: 15px;
+        cursor: pointer;
+        transition: background-color .3s ease-in-out;
+
+        @include breakpoint-min(1920) {
+            min-width: 50px;
+            padding: 2.05rem 1rem;
+            font-size: 1.5em; 
+        }
+      }
+      
+      .button--submit:hover {
+        color: white;
+        background-color: var(--vert900);
+      }
+      
+      .input:focus, .input:focus-visible {
+        outline: none;
+      }
+}

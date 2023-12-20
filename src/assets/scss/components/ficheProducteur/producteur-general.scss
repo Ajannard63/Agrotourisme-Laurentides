@@ -1,0 +1,81 @@
+// Style général de la fiche producteur
+//------------------------------------------------
+// Nom: Oli Boucher
+// Matricule: 2147514
+
+main.fiche {
+    @include breakpoint-min(992) {
+        @include setFlex(column, center, flex-end);
+        position: relative;
+    }
+
+    @include breakpoint-min(1492) {
+        width: 90%;
+        margin: 100px auto;
+    }
+
+    @include breakpoint-min(1920) {
+        margin: 200px auto;
+    }
+
+    //-----------------------------------------------
+    // Nom
+    //------------------------------------------------
+
+    & h2 {
+        margin: 50px 0;
+        font-size: 2.5em;
+        font-weight: 700;
+        line-height: 1.2em;
+        text-transform: uppercase;
+
+        @include breakpoint-min(576) {
+            margin: 100px;
+            font-size: 3.5em;
+        }
+
+        @include breakpoint-min(992) {
+            position: absolute;
+            font-size: 4em;
+            z-index: 2;
+        }
+
+        @include breakpoint-min(1200) {
+            margin: 150px 150px;
+        }
+
+        @include breakpoint-min(1492) {
+            font-size: 5em;
+        }
+
+        @include breakpoint-min(1920) {
+            margin: 200px 150px;
+            font-size: 6em;
+        }
+    }
+
+    //-----------------------------------------------
+    // Sous-titre
+    //------------------------------------------------
+    & h3 {
+        margin: 100px 0 50px 0;
+        font-size: 1.5em;
+        text-transform: uppercase;
+
+        @include breakpoint-min(576) {
+            margin: 150px 0 50px 0;
+        }
+
+        @include breakpoint-min(992) {
+            margin: 150px 0 0px 50px;
+        }
+
+        @include breakpoint-min(1492) {
+            font-size: 2em;
+        }
+
+        @include breakpoint-min(1492) {
+            font-size: 2.5em;
+        }
+    }
+}

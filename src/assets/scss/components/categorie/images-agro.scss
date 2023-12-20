@@ -1,0 +1,64 @@
+// Style du slider d'images (cat agroalimentaire)
+//------------------------------------------------
+// Nom: Oli Boucher
+// Matricule: 2147514
+
+h2.agro {
+    @include breakpoint-min(768){
+        margin: 0;
+    }
+}
+
+section.slider {
+    width: 80%;
+    height: 300px;
+    margin: 100px auto;
+    background-image: url('@/assets/img/categorie/fromage.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    animation: slide 15s infinite;
+
+    @include breakpoint-min(576){
+        width: 70%;
+        height: 500px;
+    }
+
+    @include breakpoint-min(992){
+        height: 600px;
+        width: 80%;
+        border-radius: 30px;
+    }
+
+    @include breakpoint-min(1200){
+        height: 600px;
+    }
+
+    @include breakpoint-min(1492){
+        width: 85%;
+    }
+
+    @include breakpoint-min(1920){
+        width: 90%;
+        height: 800px;
+    }
+}
+
+//-----------------------------------------------
+// Effet slider
+//------------------------------------------------
+@keyframes slide {
+    25% {
+        background-image: url('@/assets/img/categorie/vin.jpg');
+    }
+    50% {
+        background-image: url('@/assets/img/categorie/bakery.jpg');
+    }
+    75% {
+        background-image: url('@/assets/img/categorie/viande.jpg');
+    }
+    100% {
+        background-image: url('@/assets/img/categorie/fromage.jpg');
+    }
+}
+

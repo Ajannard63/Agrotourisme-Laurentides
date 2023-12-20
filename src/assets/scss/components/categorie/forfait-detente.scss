@@ -1,0 +1,131 @@
+// Style Forfait détente (cat agriculture)
+//------------------------------------------------
+// Nom: Oli Boucher
+// Matricule: 2147514
+
+section.forfait-detente {
+    @include setFlex(column, center, center);
+    position: relative;
+    margin-bottom: 200px;
+    width: 95%;
+
+    & img {
+        width: 90%;
+        margin: auto;
+        max-height: 80vh;
+        object-fit: cover;
+        border-radius: 15px;
+        filter: brightness(30%)
+    }
+
+    //-----------------------------------------------
+    // Carte
+    //------------------------------------------------
+    & .card1 {
+        @include setFlex(column, center, center);
+        position: absolute;
+        top: 0;
+        padding: 0px 50px;
+        width: 100%;
+        height: 100%;
+        color: white;
+        text-align: center;
+
+        @include breakpoint-min (768) {
+            padding: 0 100px;
+        }
+
+        @include breakpoint-min (1920) {
+            padding: 0 200px;
+        }
+
+
+        & h2 {
+            margin: 0 0 50px 0;
+
+            @include breakpoint-min(992) {
+                margin: 0 0 100px 0;
+                font-size: 2em;
+            }
+
+            @include breakpoint-min(1920) {
+                font-size: 5em;
+            }
+        }
+
+        & p {
+            @include breakpoint-min(992) {
+                font-size: 1.2em;
+                line-height: 1.5em;
+            }
+
+            @include breakpoint-min(1920) {
+                font-size: 2em;
+            }
+        }
+
+        & a {
+            display: none;
+        }
+
+        //-----------------------------------------------
+        // Effet de survol carte
+        //------------------------------------------------
+        &:hover {
+            & a {
+                @include setFlex(column, center, center);
+                position: absolute;
+                top: 0;
+                width: 90%;
+                height: 100%;
+                margin: auto;
+                font-size: 25px;
+                font-weight: bold;
+                cursor: pointer;
+
+                &::before,
+                &::after {
+                    position: absolute;
+                    content: "";
+                    width: 20%;
+                    height: 80%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 25px;
+                    font-weight: bold;
+                    background-color: var(--vert700);
+                    transition: all 0.5s;
+                }
+
+                &::before {
+                    top: 0;
+                    right: 0;
+                    border-radius: 0 15px 0 100%;
+                }
+
+                &::after {
+                    bottom: 0;
+                    left: 0;
+                    border-radius: 0 100% 0 15px;
+                }
+
+                &:hover::before,
+                &:hover:after {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 15px;
+                    transition: all 0.5s;
+                }
+
+                &:hover:after {
+                    content: "Voyez nos forfaits";
+                }
+
+                &:active {
+                    background-color: var(--vert700);
+                }
+            }
+        }
+    }
+}

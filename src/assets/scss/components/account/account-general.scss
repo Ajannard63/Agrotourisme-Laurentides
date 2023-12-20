@@ -1,0 +1,21 @@
+.interface{
+
+    & .title{
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+    & .nav-dashboard{
+        // background-color: #D1D1D1;
+        & ul & li{
+            display: block;
+            background-color: #FFFFFF;
+            &:hover{
+                background-color: #E6E6E6;
+            }
+            &:focus{
+                background-color: #E6E6E6;
+            }
+        }
+    }
+}

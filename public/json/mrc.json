@@ -1,0 +1,73 @@
+{
+    "Mrc":[
+        {
+            "name":"Argenteuil",
+            "id":"1",
+            "pg1":"La MRC d'Argenteuil est une destination idéale pour les amateurs d'agrotourisme. Nichée dans la région des Laurentides, au Québec, la région offre un paysage pittoresque composé de terres agricoles fertiles, de forêts denses et de lacs cristallins. Les producteurs locaux y cultivent une grande variété de fruits, de légumes, de viandes et de produits laitiers, qui sont tous disponibles dans les marchés locaux, les épiceries fines et les restaurants de la région. Les visiteurs peuvent également visiter les fermes locales, participer à des dégustations et des ateliers culinaires, et apprendre des techniques de cuisine auprès de chefs locaux. La MRC d'Argenteuil est une destination de choix pour les voyageurs qui cherchent à découvrir les traditions culinaires et agricoles de la région.",
+            
+            "sousTitre2":"Les produits locaux",
+            "pg2":"Les fermes locales : La région compte de nombreuses fermes familiales qui produisent une grande variété de fruits, de légumes, de viandes et de produits laitiers. Les visiteurs peuvent découvrir ces exploitations agricoles en visitant les fermes, en participant à des visites guidées et en achetant des produits frais directement auprès des producteurs.",
+            
+            "sousTitre3":"Les marchés locaux",
+            "pg3":"Les marchés locaux : Les marchés locaux de la MRC d'Argenteuil offrent une grande variété de produits frais et locaux, tels que des fruits et légumes de saison, des produits laitiers, des viandes, des œufs et des produits transformés. Les visiteurs peuvent rencontrer les producteurs locaux, discuter avec eux de leur production et découvrir les produits de la région.",
+            
+            "sousTitre4":"Les événements saisonniers",
+            "pg4":"Les événements saisonniers : La MRC d'Argenteuil propose des événements saisonniers, tels que la cueillette des pommes, des fraises et des bleuets, ainsi que des festivals culinaires mettant en avant les produits locaux. Ces événements permettent aux visiteurs de découvrir les produits de la région tout en profitant des activités de plein air.",
+            
+            "sousTitre5":"Les vignobles",
+            "pg5":"Les vignobles : La région compte plusieurs vignobles qui produisent des vins de qualité, notamment des vins rouges, blancs et rosés. Les vignobles proposent des visites guidées, des dégustations et des événements tout au long de l'année.",
+            
+            "sousTitre6":"Les activités de plein air",
+            "pg6":"Les activités de plein air : La MRC d'Argenteuil offre une variété d'activités de plein air, telles que la randonnée, le vélo, la pêche et la chasse. Les visiteurs peuvent explorer les forêts et les rivières de la région, profiter des lacs pour la baignade et la navigation de plaisance, et observer la faune et la flore locales.",
+            
+            "sousTitre7":"La cuisine locale",
+            "pg7":"La cuisine locale : Les restaurants de la région proposent une cuisine locale et de saison, mettant en valeur les produits frais et locaux. Les visiteurs peuvent découvrir la gastronomie locale en dégustant des plats traditionnels, en visitant les restaurants gastronomiques et en participant à des événements culinaires."
+        },
+        {
+            "name":"Pays-d’en-haut",
+            "id":"2",
+            "pg1":"La MRC des Pays-d'en-Haut est une destination de choix pour les amateurs d'agrotourisme. Située dans la région des Laurentides, au Québec, la région est composée de vastes étendues de terres agricoles, de forêts denses et de lacs pittoresques. Les producteurs locaux cultivent une grande variété de fruits, de légumes, de viandes et de produits laitiers, qui sont tous disponibles dans les marchés locaux, les épiceries fines et les restaurants de la région. Les visiteurs peuvent découvrir les fermes locales, participer à des visites guidées et des ateliers culinaires, et rencontrer les producteurs locaux pour en apprendre davantage sur leurs pratiques agricoles. La MRC des Pays-d'en-Haut est une destination incontournable pour les voyageurs qui cherchent à découvrir les traditions culinaires et agricoles de la région, tout en profitant de la beauté naturelle environnante. ",
+            
+            "sousTitre2":"Les produits locaux",
+            "pg2":"Les produits locaux : la région est renommée pour ses producteurs locaux de fruits, de légumes, de viandes, de produits laitiers et de vins. Les visiteurs peuvent découvrir une variété de produits frais dans les marchés locaux, les épiceries fines et les restaurants de la région.",
+            
+            "sousTitre3":"",
+            "pg3":"Les fermes agrotouristiques : les fermes de la région offrent des visites guidées et des ateliers culinaires, ainsi que des dégustations de produits locaux. Les visiteurs peuvent également participer à des activités telles que la cueillette de fruits et de légumes, la traite des vaches, la fabrication de fromage et la confection de confitures.",
+            
+            "sousTitre4":"Les événements",
+            "pg4":"Les événements : la MRC des Pays-d'en-Haut est connue pour ses événements agrotouristiques, tels que les marchés publics, les festivals culinaires et les dégustations de vin. Ces événements offrent aux visiteurs l'occasion de découvrir les produits locaux et de rencontrer les producteurs de la région.",
+            
+            "sousTitre5":"Les restaurants",
+            "pg5":"Les restaurants : la région compte de nombreux restaurants qui mettent en valeur les produits locaux dans leurs menus. Les visiteurs peuvent déguster des plats savoureux et créatifs élaborés à partir d'ingrédients frais et de saison.",
+            
+            "sousTitre6":"La beauté naturelle",
+            "pg6":"La beauté naturelle : la MRC des Pays-d'en-Haut est entourée d'une nature luxuriante, avec ses montagnes, ses forêts et ses lacs cristallins. Les visiteurs peuvent profiter de la beauté naturelle environnante tout en découvrant les traditions culinaires et agricoles de la région."
+        },
+        {
+            "name":"Laurentides",
+            "id":"3",
+            "pg1":"La MRC des Laurentides est une destination de choix pour les amateurs d'agrotourisme. Située dans la région des Laurentides, au Québec, la région est renommée pour ses vastes étendues de terres agricoles, de forêts denses et de lacs pittoresques. Les producteurs locaux cultivent une grande variété de fruits, de légumes, de viandes et de produits laitiers, qui sont tous disponibles dans les marchés locaux, les épiceries fines et les restaurants de la région. Les visiteurs peuvent découvrir les fermes locales, participer à des visites guidées et des ateliers culinaires, et rencontrer les producteurs locaux pour en apprendre davantage sur leurs pratiques agricoles. La MRC des Laurentides est une destination incontournable pour les voyageurs qui cherchent à découvrir les traditions culinaires et agricoles de la région, tout en profitant de la beauté naturelle environnante.",
+            
+            "sousTitre2":"Les produits locaux",
+            "pg2":"Les producteurs locaux : la région regorge de producteurs locaux offrant une variété de produits frais tels que les fruits et légumes, les fromages, les viandes, les vins et les cidres. Certains producteurs offrent des visites guidées de leurs fermes et des dégustations de leurs produits.",
+            
+            "sousTitre3":"Les marchés fermiers ",
+            "pg3":"Les marchés fermiers : la région compte plusieurs marchés fermiers, tels que le marché public de Val-David, le marché de Saint-Sauveur et le marché de Sainte-Adèle, offrant une variété de produits locaux frais ainsi que des plats cuisinés et des produits artisanaux.",
+            
+            "sousTitre4":"Les vignobles et cidreries",
+            "pg4":"Les vignobles et cidreries : la région est connue pour ses vignobles et cidreries, offrant une expérience unique de dégustation de vins, cidres et autres produits locaux.",
+            
+            "sousTitre5":"Les restaurants locaux",
+            "pg5":"Les restaurants locaux : plusieurs restaurants de la région utilisent des ingrédients frais et locaux pour élaborer des plats créatifs et savoureux, offrant ainsi une expérience culinaire authentique.",
+            
+            "sousTitre6":"Les activités agrotouristiques",
+            "pg6":"Les activités agrotouristiques : la région propose une variété d'activités agrotouristiques, telles que les visites de fermes, les ateliers culinaires, les dégustations de vins et les cueillettes de fruits et légumes de saison.",
+            
+            "sousTitre7":"Les activités agrotouristiques",
+            "pg7":"Les sentiers gourmands : la région compte plusieurs sentiers gourmands permettant de découvrir les produits locaux et les artisans de la région, tout en profitant de la nature environnante.",
+            
+            "sousTitre8":"Les événements agrotouristiques",
+            "pg8":"Les événements agrotouristiques : la région organise plusieurs événements agrotouristiques tout au long de l'année, tels que les festivals des vendanges, les fêtes de la citrouille et les marchés de Noël, offrant une occasion de découvrir les produits locaux et de rencontrer les producteurs et artisans de la région."
+        }
+    ]
+}

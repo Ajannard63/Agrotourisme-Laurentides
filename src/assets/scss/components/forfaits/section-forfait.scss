@@ -1,0 +1,135 @@
+.vignette-forfaits {
+    @include setFlex(column, flex-start, center);
+    position: relative;
+    margin: 10px 0;
+    width: 100%;
+
+    @include breakpoint-min(768) {
+        margin: 0;
+    }
+
+    & a {
+        display: none;
+    }
+
+    &:hover {
+        & a {
+            @include setFlex(column, center, center);
+            position: absolute;
+            bottom: 0;
+            height: 100%;
+            width: 100%;
+            background: var(--turquoise);
+            color: white;
+            border: none;
+            font-size: 1.5em;
+            font-weight: bold;
+            cursor: pointer;
+            z-index: 1;
+            overflow: hidden;
+
+            @include breakpoint-min(992) {
+                right: 0;
+            }
+        }
+
+        & a:hover {
+            color: var(--turquoise);
+            border-radius: 20px;
+        }
+
+        & a:after {
+            content: "";
+            background: white;
+            position: absolute;
+            z-index: -1;
+            left: -20%;
+            right: -20%;
+            top: 0;
+            bottom: 0;
+            transform: skewX(-45deg) scale(0, 1);
+            transition: all 1.5s;
+        }
+
+        & a:hover:after {
+            transform: skewX(-45deg) scale(2, 2);
+            -webkit-transition: all 1.5s;
+            transition: all 1.5s;
+        }
+    }
+
+    & img.image-forfaits {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 20px;
+        filter: brightness(50%);
+
+        @include breakpoint-min(768) {
+            height: 200px;
+        }
+
+        @include breakpoint-min(1200) {
+            height: 300px;
+        }
+
+        @include breakpoint-min(1920) {
+            height: 400px;
+        }
+    }
+
+    & .infos {
+        @include setFlex(row, flex-start, center);
+        position: absolute;
+        top: 10px;
+        left: 10px;
+
+        @include breakpoint-min(1700) {
+            top: 20px;
+            left: 20px;
+        }
+
+        & img.symbole {
+            width: 15%;
+            margin-right: 20px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        & h3 {
+            font-size: 1em;
+            color: white;
+
+            @include breakpoint-min(1700) {
+                font-size: 1.5em;
+            }
+        }
+    }
+
+}
+.circles {
+    position: absolute;
+    left: -1.75%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    .circle {
+      width: 50px;
+      height: 50px;
+      // background-color: #ff0000; // Changez la couleur comme vous le souhaitez
+      border-radius: 50%;
+      margin-bottom: 10px;
+      z-index: 1;
+    }
+    .circle:first-child {
+      background-color: var(--vert100);
+    }
+    .circle:nth-child(2) {
+      background-color: var(--vert500);
+    }
+    .circle:last-child {
+      background-color: var(--vert1000);
+    }
+  }

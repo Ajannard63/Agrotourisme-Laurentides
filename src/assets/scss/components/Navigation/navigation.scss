@@ -1,0 +1,62 @@
+// Style général de la navigation
+//------------------------------------------------
+// Nom: Oli Boucher
+// Matricule: 2147514
+// Description: Style général de la navigation
+//------------------------------------------------
+// Nom: Albert Jannard
+// Matricule: 
+// Description: Adapation du style à la mécanique
+
+.menu {
+  @include setFlex(column, space-around, space-around);
+  position: fixed;
+  top: 0;
+  max-width: 100vw;
+  height: 100%;
+  // max-height: 100vh;
+  padding: 50px;
+  opacity: 1;
+  transition: opacity 0.3s ease-out;
+  color: white;
+  background-color: var(--turquoise);
+  z-index: 5;
+  overflow-x: hidden;
+
+  .section1 {
+    position: relative;
+    @include setFlex(column, center, flex-start);
+    margin-bottom: 60px;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    font-weight: 1000;
+    z-index: 1;
+    pointer-events: all;
+
+    @include breakpoint-min(768) {
+      font-size: 2.5em
+    }
+  }
+  .section2 {
+    @include setFlex(column, center, flex-end);
+    font-size: 1em;
+    text-align: right;
+    line-height: 2em;
+
+    @include breakpoint-min(992) {
+      font-size: 1.2em
+    }
+  }
+  
+  & a:hover {
+    color: var(--jaune);
+  }
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}

@@ -1,0 +1,116 @@
+// Gestion des composants
+//----------------------------------------------------
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Importation de la navigation
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+@import 'navigation/navigation';
+@import 'navigation/barre-recherche.scss';
+@import 'navigation/barre-navigation.scss';
+@import 'navigation/logo.scss';
+@import 'navigation/texte-defilement.scss';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Importation de l'accueil
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+@import 'accueil/accueil-general.scss';
+@import 'accueil/header.scss';
+@import 'accueil/texte-intro.scss';
+@import 'accueil/attractions-populaires.scss';
+@import 'accueil/suggestion-hebergement.scss';
+@import 'accueil/calendrier-evenement.scss';
+@import 'accueil/forfait-promo.scss';
+@import 'accueil/partenaires.scss';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Importation de l'account
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+@import 'account/account-general.scss';
+@import 'account/InfoPersoUser.scss';
+@import 'account/img-user.scss';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Importation de l'accueil d'une catégorie
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+@import 'categorie/categorie-general.scss';
+@import 'categorie/header-categorie.scss';
+@import 'categorie/sous-cat.scss';
+@import 'categorie/couche-infolettre.scss';
+@import 'categorie/couche-pub.scss';
+@import 'categorie/fil-arianne.scss';
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Importation de la catégorie agriculture
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+@import 'categorie/mirabeille-promo.scss';
+@import 'categorie/forfait-detente.scss';
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Importation de la catégorie agroalimentaire
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+@import 'categorie/images-agro.scss';
+@import 'categorie/couche-maraicher.scss';
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Importation de la catégorie activite
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+@import 'categorie/saviez-vous.scss';
+@import 'categorie/proposition-activite.scss';
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Importation de la catégorie hébergement
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+@import 'categorie/slider-img.scss';
+@import 'categorie/forfait-decouverte.scss';
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Importation de la catégorie restauration
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+@import 'categorie/couche-grille.scss';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Importation du pied de page
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+@import 'footer/footer-app.scss';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Importation de la fiche du producteur
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+@import 'ficheProducteur/producteur-general.scss';
+@import 'ficheProducteur/image-producteur.scss';
+@import 'ficheProducteur/infos-producteur.scss';
+@import 'ficheProducteur/rejoindre.scss';
+@import 'ficheProducteur/bouton-web.scss';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Importation des fichier pour la page de register
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+@import 'register/register.scss';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Importation du style MRC
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+@import 'mrc/header-mrc.scss';
+@import 'mrc/contenue-mrc.scss';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Importation du style de la page du portrait de la regions
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+@import 'regions/regions-header.scss';
+@import 'regions/regions-carrousel.scss';
+@import 'regions/sous-nav-laurentide.scss';
+@import 'regions/carte-interactive.scss';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Importation du style de la page du portrait de la regions
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+@import 'forfaits/header-forfaits.scss';
+@import 'forfaits/section-forfait.scss';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Importation du style de la page calendrier
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+@import 'calendrier/liste-mois-mobile.scss';
+@import 'calendrier/liste-mois-desktop.scss';
+@import 'calendrier/couleurs-mois.scss';
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Importation du style curseur personnalisé
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+@import 'cursor/cursor.scss';

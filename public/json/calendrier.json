@@ -1,0 +1,308 @@
+{
+  "calendrier": [
+    {
+      "nom": "Janvier",
+      "evenements": [
+        {
+          "dateDebut": "05-Jan",
+          "ville": "Saint-Sauveur",
+          "nom": "La Randonnée des Saveurs ",
+          "emplacement": "Ferme Caprine",
+          "description": "Une visite guidée de la ferme de chèvres suivie d'une dégustation de fromages artisanaux frais.",
+          "prix": "10 $ par personne"
+        },
+        {
+          "dateDebut": "20-Jan",
+          "ville": "Mont-Tremblant",
+          "nom": "Les Vins d'Hiver ",
+          "emplacement": "Les Vins des Laurentides",
+          "description": "Une expérience de dégustation de vins locaux accompagnée de plats locaux. ",
+          "prix": "25 $ par personne"
+        }
+      ]
+    },
+    {
+      "nom": "Février",
+      "evenements": [
+        {
+          "dateDebut": "03-Feb",
+          "ville": "Sainte-Adèle",
+          "nom": "Chocolats d'antan ",
+          "emplacement": "Chocolats d'antan",
+          "description": "Un atelier de fabrication de chocolats artisanaux à partir de fèves de cacao biologiques.",
+          "prix": "45 $ par personne"
+        },
+        {
+          "dateDebut": "28-Feb",
+          "ville": "Val-David",
+          "nom": "Festival de la cabane à sucre des Monts ",
+          "emplacement": "Érablière des Monts",
+          "description": "Une visite guidée de la cabane à sucre traditionnelle avec la dégustation de bonbons à l'érable et d'un repas traditionnel de cabane à sucre.",
+          "prix": "20 $ par personne"
+        }
+      ]
+    },
+    {
+      "nom": "Mars",
+      "evenements": [
+        {
+          "dateDebut": "05-Mar",
+          "ville": "Sainte-Agathe-des-Monts",
+          "nom": "Découverte des trésors cachés de la forêt ",
+          "emplacement": "Domaine La Forêt",
+          "description": "Une randonnée guidée à travers la forêt pour découvrir les plantes sauvages comestibles et médicinales. ",
+          "prix": "15 $ par personne"
+        },
+        {
+          "dateDebut": "19-Mar",
+          "ville": "Mont-Tremblant",
+          "nom": "Atelier de cuisine de sirop d'érable ",
+          "emplacement": "Sucrerie du Vieux Moulin ",
+          "description": "Apprenez les techniques de fabrication du sirop d'érable auprès des experts de la sucrerie et découvrez comment cuisiner avec ce produit de base québécois. ",
+          "prix": "45 $ par personne"
+        },
+        {
+          "dateDebut": "12-Mar",
+          "ville": "Sainte-Adèle",
+          "nom": "Festi-sucre",
+          "emplacement": "Cabane à Sucre du Vieux Moulin ",
+          "description": "Découvrez le processus de production du sirop d'érable et goûtez les délicieuses spécialités sucrées de la cabane. ",
+          "prix": "10 $ par personne"
+        }
+      ]
+    },
+    {
+      "nom": "Avril",
+      "evenements": [
+        {
+          "dateDebut": "05-Apr",
+          "ville": "Sainte-Anne-des-Lacs",
+          "nom": "Fête du Printemps ",
+          "emplacement": "Jardin d'Antan",
+          "description": "Une journée festive célébrant le retour du printemps avec des activités de jardinage, des dégustations de produits locaux et des ateliers d'artisanat.",
+          "prix": "10 $ par personne"
+        },
+        {
+          "dateDebut": "12-Apr",
+          "ville": "Saint-Jospeh-du-Lac",
+          "nom": "Visite d'une cidrerie ",
+          "emplacement": "Cidrerie de la Vallée",
+          "description": "Une visite guidée de la cidrerie avec une dégustation de cidres artisanaux.",
+          "prix": "35 $ par personne"
+        }
+      ]
+    },
+    {
+      "nom": "Mai",
+      "evenements": [
+        {
+          "dateDebut": "05-May",
+          "Date fin": "15-May",
+          "ville": "Mont-Saint-Michel",
+          "nom": "Les Randonnées gourmandes",
+          "emplacement": "Sentier des Chutes",
+          "description": "Une randonnée guidée à travers les magnifiques chutes du Mont-Saint-Michel avec des arrêts pour des dégustations de produits locaux. ",
+          "prix": "20 $ par personne"
+        },
+        {
+          "dateDebut": "15-May",
+          "ville": "Sainte-Adèle",
+          "nom": "Journée de l'Agrotourisme ",
+          "emplacement": "Ferme du Buisson",
+          "description": "Une journée dédiée à la découverte de l'agriculture locale, avec des visites de fermes, des dégustations de produits locaux et des activités pour toutes la famille",
+          "prix": "Entrée gratuite"
+        },
+        {
+          "dateDebut": "15-May",
+          "ville": "Saint-Jérôme",
+          "nom": "Atelier de fabrication de fromage ",
+          "emplacement": "Ferme La Belle Étable ",
+          "description": "Apprenez les techniques de fabrication du fromage artisanal auprès de professionnels de la ferme. Les participants repartent avec un fromage de leur propre fabrication.",
+          "prix": "25 $ par personne"
+        },
+        {
+          "dateDebut": "29-Apr",
+          "ville": "Sainte-Adèle ",
+          "nom": "Dégustation de fromages artisanaux",
+          "emplacement": "Fromagerie La Montagne ",
+          "description": "Savourez une variété de fromages artisanaux faits à partir de lait de chèvre et de vache. ",
+          "prix": "20 $ par personne"
+        }
+      ]
+    },
+    {
+      "nom": "Juin",
+      "evenements": [
+        {
+          "dateDebut": "15-Jun",
+
+          "ville": "Mirabel",
+          "nom": "Atelier de fabrication de fromage ",
+          "emplacement": "Ferme La Belle Étable ",
+          "description": "Apprenez les techniques de fabrication du fromage artisanal auprès de professionnels de la ferme. Les participants repartent avec un fromage de leur propre fabrication.",
+          "prix": "25 $ par personne"
+        },
+        {
+          "dateDebut": "15-Jun",
+          "ville": "Saint-Jérôme ",
+          "nom": "Fête des fraises ",
+          "emplacement": "Ferme La Fraisière ",
+          "description": "Venez célébrer la saison des fraises avec nous! Dégustations, vente de fruits frais et activités familiales. ",
+          "prix": "Entrée gratuite"
+        },
+        {
+          "dateDebut": "20-Jun",
+          "Date fin": "25-Jun",
+          "ville": "Sainte-Adèle ",
+          "nom": " Balade à cheval Boréale",
+          "emplacement": "Ranch Équiloisir ",
+          "description": "Profitez du magnifique paysage des Laurentides lors d'une balade à cheval.",
+          "prix": "40 $ par personne"
+        }
+      ]
+    },
+    {
+      "nom": "Juillet",
+      "evenements": [
+        {
+          "dateDebut": "20-Jul",
+          "Date fin": "30-Jul",
+          "ville": "Val-David ",
+          "nom": "Festival de la lavande ",
+          "emplacement": "Jardin de la Lavande ",
+          "description": "Plongez dans un monde de senteurs et de couleurs avec notre festival de la lavande. Activités pour tous les âges.",
+          "prix": "15 $ par personne"
+        }
+      ]
+    },
+    {
+      "nom": "Août",
+      "evenements": [
+        {
+          "dateDebut": "10-Aug",
+          "ville": "Saint-Sauveur ",
+          "nom": "Pique-nique gourmand ",
+          "emplacement": "Domaine de la Colline ",
+          "description": "Découvrez les produits locaux lors d'un pique-nique gourmand dans notre domaine. ",
+          "prix": "Panier-repas pour deux, 60 $"
+        }
+      ]
+    },
+    {
+      "nom": "Septembre",
+      "evenements": [
+        {
+          "dateDebut": "03-Sep",
+          "Date fin": "15-Sep",
+          "ville": "Oka",
+          "nom": "Vendanges ",
+          "emplacement": "Vignoble Léger ",
+          "description": "Venez participer à la cueillette des raisins dans notre vignoble et profitez d'une dégustation de vins",
+          "prix": "Entrée gratuite"
+        },
+        {
+          "dateDebut": "01-Oct",
+          "Date fin": "31-Oct",
+          "ville": "Sainte-Agathe-des-Monts ",
+          "nom": "Cueillettes de champignons ",
+          "emplacement": "Forêt enchantée ",
+          "description": "Partez à la recherche des champignons des bois lors d'une excursion guidée dans la forêt enchantée. ",
+          "prix": "30 $ par personne"
+        },
+        {
+          "dateDebut": "13-May",
+          "ville": "Sainte-Agathe-des-Monts ",
+          "nom": "Visite d'une ferme biologique ",
+          "emplacement": "Ferme biologique du Bonheur ",
+          "description": "Découvrez les pratiques agricoles biologiques et dégustez des produits frais de la ferme.",
+          "prix": "Entrée gratuite"
+        }
+      ]
+    },
+    {
+      "nom": "Octobre",
+      "evenements": [
+        {
+          "dateDebut": "01-Oct",
+          "Date fin": "31-Oct",
+          "ville": "Saint-Joseph-du-Lac ",
+          "nom": "Dégustation de cidres ",
+          "emplacement": "Cidrerie des Laurentides ",
+          "description": "Venez déguster nos cidres de pommes artisanaux et découvrez le processus de fabrication. ",
+          "prix": "25 $ par personne"
+        },
+        {
+          "dateDebut": "15-Sep",
+          "Date fin": "15-Oct",
+          "ville": "Saint-Jérôme ",
+          "nom": "Festival des couleurs ",
+          "emplacement": "Parc naturel de la Rivière-du-Nord ",
+          "description": "Admirez les couleurs automnales lors de notre festival avec des activités pour toute la famille",
+          "prix": "Entrée gratuite"
+        },
+        {
+          "dateDebut": "01-Oct",
+          "Date fin": "15-Oct",
+          "ville": "Val-David",
+          "nom": "Marché des récoltes d'automne ",
+          "emplacement": "Ferme La Grange ",
+          "description": "Venez cueillir des citrouilles, des pommes et d'autres produits de saison. ",
+          "prix": "Entrée gratuite"
+        },
+        {
+          "dateDebut": "01-Oct",
+          "Date fin": "31-Oct",
+          "ville": "Mirabel",
+          "nom": "Cueillette de courges et d'autres légumes d'automne ",
+          "emplacement": "Ferme de l'Érablière ",
+          "description": "Choisissez vos propres courges, citrouilles, navets, carottes et autres légumes de saison. ",
+          "prix": "Entrée gratuite"
+        }
+      ]
+    },
+    {
+      "nom": "Novembre",
+      "evenements": [
+        {
+          "dateDebut": "20-Nov",
+          "ville": "Oka",
+          "nom": "Dégustation de cidres de glace ",
+          "emplacement": "Cidrerie Au Coeur de la Pomme ",
+          "description": "Découvrez la saveur sucrée et rafraîchissante du cidre de glace, un produit unique à la région",
+          "prix": "Les prix varient de 25 $ à 70 $"
+        }
+      ]
+    },
+    {
+      "nom": "Décembre",
+      "evenements": [
+        {
+          "dateDebut": "01-Dec",
+          "Date fin": "18-Dec",
+          "ville": "Val-David",
+          "nom": "Marché de Noël de la ferme ",
+          "emplacement": "Ferme Le Ruisseau ",
+          "description": "Trouvez des cadeaux uniques de la ferme pour vos proches, dégustez des produits frais et participez à des activités pour les enfants.",
+          "prix": "Entrée gratuite"
+        },
+        {
+          "dateDebut": "01-Dec",
+          "Date fin": "20-Dec",
+          "ville": "Sainte-Adèle",
+          "nom": "Cueillette de sapins de Noël ",
+          "emplacement": "Ferme des Neiges ",
+          "description": "Venez choisir et couper votre propre sapin de Noël tout en profitant de la neige fraîche. ",
+          "prix": "45 $ par arbre"
+        },
+        {
+          "dateDebut": "28-Dec",
+          "ville": "Sainte-Agathe-des-Monts",
+          "nom": "Soirée de fondue sous les étoiles ",
+          "emplacement": "Ferme La Vacherie ",
+          "description": "Dégustez une délicieuse fondue au fromage ou à la viande sous les étoiles, accompagnée de vin chaud et de chocolat chaud.",
+          "prix": "35 $ par personne"
+        }
+      ]
+    }
+  ]
+}

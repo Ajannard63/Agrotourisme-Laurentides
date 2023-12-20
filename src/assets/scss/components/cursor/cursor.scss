@@ -1,0 +1,56 @@
+// Style Curseur personnalisé
+//------------------------------------------------
+// Nom: Oli Boucher
+// Matricule: 2147514
+
+// * {
+//     cursor: none;
+// }
+
+.custom-cursor {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: transparent;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+
+    &::after, &::before {
+        content: '';
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: var(--jaune);
+        border-radius: 50px;
+    }
+
+    &::before {
+        background-color: var(--jaune);
+    }
+}
+
+ //-----------------------------------------------
+// Effet au clic
+//------------------------------------------------ 
+.custom-cursor.click::before {
+    animation: click 1s ease-in-out forwards;
+  }
+  
+
+@keyframes click {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(5);
+    }
+}

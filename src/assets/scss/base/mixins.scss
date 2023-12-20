@@ -1,0 +1,57 @@
+@mixin setFlex($direction, $justify, $align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin debug {
+    border : 5px red solid;
+}
+
+@mixin breakpoint-min($screen){
+    @media (min-width: #{$screen}px){
+        @content;
+    }
+ }
+
+@mixin resetBox{
+    padding : 0;
+    margin: 0;
+}
+
+@mixin bouton {
+
+    & a {
+        @include setFlex(column, center, center);
+        padding: 10px 20px;
+        margin: 10px;
+        border-radius: 50px;
+        border: 1px solid var(--vert400);
+        color: var(--vert400);
+        text-align: center;
+        background-color: white;
+        box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        font-size: 10px;
+        transition: all .5s ease;
+
+        &:hover {
+            letter-spacing: 3px;
+            background-color: var(--vert400);
+            color: hsl(0, 0%, 100%);
+            box-shadow: var(--vert1300) 0px 1px 9px 0px;
+        }
+
+        &:active {
+            letter-spacing: 3px;
+            background-color: var(--vert400);
+            color: hsl(0, 0%, 100%);
+            box-shadow: var(--vert1300) 0px 1px 9px 0px;
+            transform: translateY(10px);
+            transition: 100ms;
+        }
+
+    }
+}

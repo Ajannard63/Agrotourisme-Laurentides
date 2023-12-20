@@ -1,0 +1,239 @@
+// Style de la promotion d'un forfait
+//------------------------------------------------
+// Nom: Oli Boucher
+// Matricule: 2147514
+
+section.forfait-accueil {
+    position: relative;
+    padding: 100px 0 200px 0;
+    margin-bottom: 200px;
+
+    @include breakpoint-min(1492) {
+        padding: 200px 0 300px 0;
+    }
+
+    //-----------------------------------------------
+    // Contenu
+    //------------------------------------------------
+
+    & .row {
+        @include setFlex(row, center, space-between);
+        overflow: hidden;
+
+        @include breakpoint-min(768) {
+            position: relative;
+        }
+
+        @include breakpoint-min(992) {
+            margin: 100px;
+        }
+
+        @include breakpoint-min(1200) {
+            margin: 0px;
+            width: 80%;
+        }
+
+        @include breakpoint-min(1700) {
+            width: 80%;
+        }
+
+        @include breakpoint-min(1920) {
+            width: 85%;
+        }
+
+
+
+        & img {
+            position: relative;
+            left: -100px;
+            width: 600px;
+            height: 400px;
+            object-fit: cover;
+
+            @include breakpoint-min(768) {
+                left: -250px;
+                width: 800px;
+            }
+
+            @include breakpoint-min(992) {
+                height: 500px
+            }
+
+            @include breakpoint-min(1700) {
+                width: 900px;
+            }
+
+            @include breakpoint-min(1920) {
+                width: 1200px;
+            }
+
+        }
+
+        //-----------------------------------------------
+        // Infos sur le forfait
+        //------------------------------------------------
+        & .forfait {
+            @include setFlex(column, space-between, flex-start);
+            position: absolute;
+            bottom: 20%;
+            right: 0;
+            height: 300px;
+            width: 350px;
+            padding: 40px 20px;
+            color: white;
+            background-color: var(--vert400);
+            box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.468);
+            border-left: 100px solid var(--vert100);
+
+            @include breakpoint-min(768) {
+                bottom: 10%;
+                padding: 20px 20px;
+            }
+
+            @include breakpoint-min(992) {
+                bottom: 20%;
+                width: 500px;
+            }
+
+            @include breakpoint-min(1200) {
+                bottom: 10%;
+                height: 400px;
+                padding: 60px 20px;
+            }
+
+            @include breakpoint-min(1492) {
+                width: 600px;
+            }
+
+            @include breakpoint-min(1700) {
+                width: 800px;
+            }
+
+            & h3 {
+                font-size: 1.2em;
+                text-transform: uppercase;
+                font-weight: 700;
+
+                @include breakpoint-min(768) {
+                    font-size: 1.5em;
+                    line-height: 1.2em;
+                }
+
+                @include breakpoint-min(1200) {
+                    font-size: 2.2em;
+                    line-height: 1.2em;
+                }
+            }
+
+            & p:nth-child(2) {
+                font-size: 0.8em;
+                font-weight: 200;
+
+                @include breakpoint-min(1492) {
+                    font-size: 1.2em;
+                }
+            }
+
+            & p.prix {
+                font-size: 1em;
+
+                @include breakpoint-min(768) {
+                    font-size: 1.3em;
+                }
+
+                @include breakpoint-min(1200) {
+                    font-size: 1.8em;
+                }
+            }
+
+            //-----------------------------------------------
+            // Bouton de détals
+            //------------------------------------------------
+            & .bouton {
+                padding: 10px 30px;
+                border-radius: 50px;
+                border: 0;
+                color: var(--vert400);
+                text-align: center;
+                background-color: white;
+                box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+                letter-spacing: 1.5px;
+                text-transform: uppercase;
+                font-size: 12px;
+                transition: all .5s ease;
+
+                @include breakpoint-min(1920) {
+                    font-size: 15px;
+                }
+
+                &:hover {
+                    letter-spacing: 3px;
+                    background-color: var(--vert400);
+                    color: hsl(0, 0%, 100%);
+                    box-shadow: var(--vert1300) 0px 1px 9px 0px;
+                }
+
+                &:active {
+                    letter-spacing: 3px;
+                    background-color: var(--vert400);
+                    color: hsl(0, 0%, 100%);
+                    box-shadow: var(--vert1300) 0px 0px 0px 0px;
+                    transform: translateY(10px);
+                    transition: 100ms;
+                }
+
+            }
+        }
+    }
+}
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Bouton voir les forfaits
+// - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+section.forfait-accueil {
+    @include setFlex(column, center, center);
+
+    & .voir-plus {
+        @include setFlex(row, center, center);
+        position: absolute;
+        bottom: 5%;
+        width: 80%;
+        padding: 17px 40px;
+        border-radius: 50px;
+        border: 1px solid var(--vert400);
+        color: var(--vert400);
+        text-align: center;
+        background-color: white;
+        box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        font-size: 14px;
+        transition: all .5s ease;
+
+        @include breakpoint-min(1492) {
+            bottom: 10%;
+        }
+
+        @include breakpoint-min(1920) {
+            width: 85%;
+            font-size: 18px;
+        }
+
+        &:hover {
+            letter-spacing: 3px;
+            background-color: var(--vert400);
+            color: hsl(0, 0%, 100%);
+            box-shadow: var(--vert1300) 0px 1px 9px 0px;
+        }
+
+        &:active {
+            letter-spacing: 3px;
+            background-color: var(--vert400);
+            color: hsl(0, 0%, 100%);
+            box-shadow: var(--vert1300) 0px 0px 0px 0px;
+            transform: translateY(10px);
+            transition: 100ms;
+        }
+    }
+}

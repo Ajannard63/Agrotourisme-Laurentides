@@ -1,0 +1,35 @@
+// Style du texte de défilenent d'arrière plan
+//------------------------------------------------
+// Nom: Oli Boucher
+// Matricule: 2147514
+
+.texte-defilement{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    pointer-events: none;
+
+}
+
+.agro-defile {
+    color: rgba(255, 255, 255, 0.199);
+    font-size: 18em;
+    font-weight: 800;
+    white-space: nowrap;
+    z-index: 0;
+    animation: Scroll 40s linear infinite;
+
+    @include breakpoint-min(992){
+        position: relative;
+        top: 100px;
+    }
+}
+
+@keyframes Scroll {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
