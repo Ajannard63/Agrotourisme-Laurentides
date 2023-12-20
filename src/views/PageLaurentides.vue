@@ -6,14 +6,14 @@
 <script setup>
 
 import HeaderRegions from "@/components/regions/HeaderRegions.vue";
-import CarrouselImg from "../components/regions/CarrouselImg.vue";
+import CarrouselImg from "@/components/regions/CarrouselImg.vue";
 import CarrouselDeText from "@/components/regions/CarrouselDeText.vue";
 import ContenuLaurentides from "@/components/regions/ContenuLaurentides.vue";
 // import CarteInteractive from "@/components/regions/CarteInteractive.vue";
-import SousNavLaurentide from "../components/regions/SousNavLaurentide.vue";
-import PartenairesApp from "../components/Accueil/PartenairesApp.vue";
-import MapboxInteractive from "../components/regions/MapboxInteractive.vue";
-import FilArianne from "../components/commun/Navigation/FilArianne.vue";
+import SousNavLaurentide from "@/components/regions/SousNavLaurentide.vue";
+import PartenairesApp from "@/components/Accueil/PartenairesApp.vue";
+import MapboxInteractive from "@/components/regions/MapboxInteractive.vue";
+import FilArianne from "@/components/commun/Navigation/FilArianne.vue";
 </script>
 
 <template>
