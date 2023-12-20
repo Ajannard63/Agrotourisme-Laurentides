@@ -79,32 +79,32 @@ const router = createRouter({
     {
       path: '/argenteuil',
       name: 'argenteuil',
-      component: () => import("@/views/PageMrcArgenteuil.vue"),
+      component: () => import("@/views/pageMrcArgenteuil.vue"),
     },
     {
       path: '/deuxMontagnes',
       name: 'deuxMontagnes',
-      component: () => import("@/views/PageMrcDeuxMontagne.vue"),
+      component: () => import("@/views/pageMrcDeuxMontagne.vue"),
     },
     {
       path: '/mrcLaurentides',
       name: 'mrcLaurentides',
-      component: () => import("@/views/PageMrcLaurentides.vue"),
+      component: () => import("@/views/pageMrcLaurentides.vue"),
     },
     {
       path: '/mirabel',
       name: 'mirabel',
-      component: () => import("@/views/PageMrcMirabel.vue"),
+      component: () => import("@/views/pageMrcMirabel.vue"),
     },
     {
       path: '/paysDenHaut',
       name: 'paysDHaut',
-      component: () => import("@/views/PageMrcPaysDHaut.vue"),
+      component: () => import("@/views/pageMrcPaysDHaut.vue"),
     },
     {
       path: '/riviereDuNord',
       name: 'riviereDuNord',
-      component: () => import("@/views/PageMrcRiviereDuNord.vue"),
+      component: () => import("@/views/pageMrcRiviereDuNord.vue"),
     },
   ]
 })
